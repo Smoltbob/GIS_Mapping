@@ -12,3 +12,6 @@ It was not easy to find a source of geo data for the Swedish zipcodes. There is 
 This is a simple map meant to experiment with the dataset. I displayed the zipcodes as integer values with the Turbo color gradient.
 I then picked a few cities that I found interesting to display.
 The font I used is [Tratex](https://en.wikipedia.org/wiki/Tratex).
+
+
+![Swedish_Zipcodes](https://github.com/Smoltbob/QGIS_Tooling/blob/main/Maps/Swedish_Postcodes/postnummer_i_sverige.png)
