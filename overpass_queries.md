@@ -30,3 +30,27 @@ area["ISO3166-1"="SE"][admin_level=2]->.sweden;
 );
 out center;
 ```
+
+# Bus stops
+## In Sweden
+```
+[out:json];
+area["ISO3166-1"="SE"][admin_level=2]->.sweden;
+(
+  node["highway"="bus_stop"](area.sweden);
+  way["highway"="bus_stop"](area.sweden);
+  relation["highway"="bus_stop"](area.sweden);
+);
+out center;
+```
+
+## In Skåne
+```
+[out:json];
+area[name="Skåne län"]->.skane;
+(
+  node["highway"="bus_stop"](area.skane);
+  way["highway"="bus_stop"](area.skane);
+);
+out center;
+```
