@@ -18,3 +18,15 @@ area["ISO3166-1"="SE"][admin_level=2]->.sweden;
 (._;>;);
 out center;
 ```
+
+# All the viewpoints in Sweden
+```
+[out:json];
+area["ISO3166-1"="SE"][admin_level=2]->.sweden;
+(
+  node["tourism"="viewpoint"](area.sweden);
+  way["tourism"="viewpoint"](area.sweden);
+  relation["tourism"="viewpoint"](area.sweden);
+);
+out center;
+```
