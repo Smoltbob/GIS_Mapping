@@ -54,3 +54,27 @@ area[name="Skåne län"]->.skane;
 );
 out center;
 ```
+
+# Picninc sites
+```
+[out:json];
+area["ISO3166-1"="SE"][admin_level=2]->.sweden;
+(
+  node["tourism"="picnic_site"](area.sweden);
+  way["tourism"="picninc_site"](area.sweden);
+  relation["tourism"="picnic_site"](area.sweden);
+);
+out center;
+```
+
+# Drinking water
+```
+[out:json];
+area["ISO3166-1"="SE"][admin_level=2]->.sweden;
+(
+  node["amenity"="drinking_water"](area.sweden);
+  way["amenity"="drinking_water"](area.sweden);
+  relation["amenity"="drinking_water"](area.sweden);
+);
+out center;
+```
