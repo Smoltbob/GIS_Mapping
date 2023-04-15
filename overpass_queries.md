@@ -78,3 +78,17 @@ area["ISO3166-1"="SE"][admin_level=2]->.sweden;
 );
 out center;
 ```
+
+# Ferry routes in Sweden
+```
+[out:json][timeout:25];
+area["ISO3166-1"="SE"][admin_level=2]->.sweden;
+(
+  node["route"="ferry"](area.sweden);
+  way["route"="ferry"](area.sweden);
+  relation["route"="ferry"](area.sweden);
+);
+out body;
+>;
+out skel qt;
+```
