@@ -2,7 +2,7 @@
 ## Getting the Data
 - Download DTM from https://sonny.4lima.de.
 
-I chose Europe DTM 3'', it is precise enough for a large scale map. The data comes as tiles in the .hgt format, in their respective CRS.
+I chose Europe DTM 3'', it is precise enough for a small scale map. The data comes as tiles in the .hgt format, in their respective CRS.
 
 ## Processing
 1. Reproject the .hgt files into EPSG:3035 Geotiffs using the script `reproject_tiles`. We need to reproject them into a metric CRS in order to use the hillshade tool later, and it is faster to reproject the tiles than a big merged file.
